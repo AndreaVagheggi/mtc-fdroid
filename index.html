@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MindTheClub F-Droid repository</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1a1a1a; --muted: #5b6470; --accent: #1f6feb; --line: #e3e6ea; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #14171a; --fg: #e9edf1; --muted: #a2adba; --accent: #6ea8ff; --line: #2b3238; }
+  }
+  :root[data-theme="dark"] { --bg: #14171a; --fg: #e9edf1; --muted: #a2adba; --accent: #6ea8ff; --line: #2b3238; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 72px; }
+  img.logo { width: 88px; height: 88px; border-radius: 20px; }
+  h1 { font-size: 1.6rem; margin: 20px 0 4px; }
+  p.sub { color: var(--muted); margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 36px; }
+  ol { padding-left: 20px; }
+  code { background: rgba(127,127,127,.14); padding: 2px 6px; border-radius: 6px;
+         font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .92em; word-break: break-all; }
+  .box { border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 16px 0; }
+  a { color: var(--accent); }
+  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+         padding: 12px 20px; border-radius: 10px; font-weight: 600; margin-top: 8px; }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="repo/icons/icon.png" alt="MindTheClub">
+  <h1>MindTheClub F-Droid repository</h1>
+  <p class="sub">The build for phones without Google services, with automatic update notifications.</p>
+
+  <a class="btn" href="fdroidrepos://fdroid.mindtheclub.com/repo?fingerprint=4B24EE293A87260FFEB3B530353EA749E8E70B1E1C4DDDEB52D59E3902B8C06E">Add this repository to F-Droid</a>
+
+  <h2>How to install</h2>
+  <ol>
+    <li>Install an F-Droid client: <a href="https://f-droid.org">F-Droid</a>, Droid-ify or Neo Store.</li>
+    <li>Tap the button above, or add this address by hand:
+      <div class="box"><code>https://fdroid.mindtheclub.com/repo</code></div>
+    </li>
+    <li>Install MindTheClub from the client, and updates will be offered there from now on.</li>
+    <li>Notifications need a UnifiedPush distributor, for example <a href="https://ntfy.sh">ntfy</a>, which is in F-Droid too.</li>
+  </ol>
+
+  <h2>Fingerprint</h2>
+  <p>Your client shows this when you add the repository. If it differs, do not continue.</p>
+  <div class="box"><code>4B24EE293A87260FFEB3B530353EA749E8E70B1E1C4DDDEB52D59E3902B8C06E</code></div>
+
+  <h2>Without F-Droid</h2>
+  <p>The signed APK of every release is also on
+    <a href="https://github.com/AndreaVagheggi/mindtheclub/releases">GitHub</a>. Installed that way,
+    updates are not automatic.</p>
+
+  <footer>
+    MindTheClub, peer to peer messaging with no company server.
+    <a href="https://www.mindtheclub.com">www.mindtheclub.com</a> ·
+    <a href="https://github.com/AndreaVagheggi/mindtheclub">Source code, GPLv3</a>
+  </footer>
+</main>
+</body>
+</html>
